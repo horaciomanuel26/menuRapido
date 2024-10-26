@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Digital</title>
+    <style>
+        /* Reset básico para remover margens e padronizar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+
+            background-image: url('/img/bg.jpg');
+        }
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+        .menu-section {
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+        .menu-section h2 {
+            background-color: #e85c5c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .menu-item-info {
+            flex: 1;
+        }
+        .menu-item-title {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+        .menu-item-description {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .menu-item-price {
+            color: #e67e22;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .capa {
+            background-color: #e85c5c;
+            color: white;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-radius: 0 0 15px 15px;
+        }
+        .capa h1 {
+            font-size: 24px;
+        }
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-item img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="capa">
+        <h1>Menu Digital</h1>
+    </div>
+
+    <!-- Seção de Pratos da Semana -->
+    <div class="menu-section">
+        <h2>Pratos da Semana</h2>
+        
+        <div class="menu-item">
+            <img src="/img/10.jpg" alt="Sopa">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Sopa</div>
+            </div>
+            <div class="menu-item-price">1000,00 Kz</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="/img/5.jpg" alt="Petisco">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Petisco</div>
+            </div>
+            <div class="menu-item-price">1000,00 Kz</div>
+        </div>
+    </div>
+
+    <!-- Seção de Segunda Feira -->
+    <div class="menu-section">
+        <h2>Segunda Feira</h2>
+        <div class="menu-item">
+            <img src="/img/1.jpg" alt="Arroz com peixe">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Arroz com Peixe</div>
+                <div class="menu-item-description">Arroz com peixe panado e alface</div>
+            </div>
+            <div class="menu-item-price">2000,00 Kz</div>
+        </div>
+    </div>
+
+    <!-- Seção de Terça Feira -->
+    <div class="menu-section">
+        <h2>Terça Feira</h2>
+        <div class="menu-item">
+            <img src="/img/4.jpg" alt="Feijão com arroz branco">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Feijão com Arroz Branco</div>
+            </div>
+            <div class="menu-item-price">2000,00 Kz</div>
+        </div>
+    </div>
+
+    <!-- Seção de Quarta Feira -->
+    <div class="menu-section">
+        <h2>Quarta Feira</h2>
+        <div class="menu-item">
+            <img src="/img/8.jpg" alt="Mufete">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Mufete</div>
+            </div>
+            <div class="menu-item-price">2000,00 Kz</div>
+        </div>
+    </div>
+
+    <!-- Seção de Quinta Feira -->
+    <div class="menu-section">
+        <h2>Quinta Feira</h2>
+        <div class="menu-item">
+            <img src="/img/3.jpg" alt="Arroz de cenoura">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Arroz de Cenoura</div>
+                <div class="menu-item-description">Arroz de cenoura com churrasco</div>
+            </div>
+            <div class="menu-item-price">2000,00 Kz</div>
+        </div>
+    </div>
+
+    <!-- Seção de Sexta Feira -->
+    <div class="menu-section">
+        <h2>Sexta Feira</h2>
+        <div class="menu-item">
+            <img src="/img/6.jpg" alt="Funge carne e ervas">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Funge Carne e Ervas</div>
+            </div>
+            <div class="menu-item-price">2000,00 Kz</div>
+        </div>
+    </div>
+
+    <!-- Seção de Sábado -->
+    <div class="menu-section">
+        <h2>Sábado</h2>
+        <div class="menu-item">
+            <img src="/img/7.jpg" alt="Almoço variado">
+            <div class="menu-item-info">
+                <div class="menu-item-title">Almoço Variado</div>
+            </div>
+            <div class="menu-item-price">2000,00 Kz</div>
+        </div>
+    </div>
+
+</body>
+</html>
